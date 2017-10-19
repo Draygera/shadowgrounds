@@ -1,5 +1,15 @@
 /**
  * File              : ../sg-game/game.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
  * Date              : 18.10.2017
  * Last Modified Date: 18.10.2017
  */
@@ -72,8 +82,14 @@
  */
 
 #include "storm3d.h"
+#include <SDL2/SDL.h>
 
 int main(int argc, char *argv[]){
-        Storm3D *storm3d = new Storm3D();
-        storm3d->test();
+        if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) != 0){
+                SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
+                return 1;
+        }
+
+        SDL_Quit();
+        return 0;
 }
