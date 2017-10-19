@@ -1,4 +1,4 @@
 project(ai)
 
-add_library(ai SHARED
+add_library(ai
         AI.cpp)
