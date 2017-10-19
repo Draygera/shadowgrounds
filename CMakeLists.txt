@@ -79,5 +79,7 @@ INCLUDE_DIRECTORIES( BEFORE SYSTEM
     # storm/keyb3
 )
 
-add_subdirectory(engine)
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+
 add_subdirectory(sg-game)

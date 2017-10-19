@@ -7,6 +7,6 @@ add_subdirectory(render)
 add_subdirectory(ui)
 add_subdirectory(util)
 
-add_dependencies(ai audio net render ui util)
-add_library(engine 
+add_library(engine SHARED 
         Storm3D.cpp)
+add_dependencies(engine ai audio net render ui util)
