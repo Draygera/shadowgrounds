@@ -9,6 +9,41 @@
  * Last Modified Date: 18.10.2017
  */
 /**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 18.10.2017
+ * Last Modified Date: 18.10.2017
+ */
+/**
  * File              : sg-game/game.cpp
  * Date              : 18.10.2017
  * Last Modified Date: 18.10.2017
@@ -39,5 +74,6 @@
 #include "storm3d.h"
 
 int main(int argc, char *argv[]){
-        Storm3D storm3d;
+        Storm3D *storm3d = new Storm3D();
+        storm3d->test();
 }
