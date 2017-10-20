@@ -145,6 +145,36 @@
  */
 /**
  * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
  * Date              : 19.10.2017
  * Last Modified Date: 19.10.2017
  */
@@ -250,7 +280,7 @@
 /* #include <GL/glew.h> */
 #include <vulkan/vulkan.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
+#include <stdio.h>
 /* #include <SDL2/SDL.h> */
 using namespace std;
 
@@ -263,8 +293,16 @@ int main(int argc, char *argv[]){
                 return -1;
         }
         
+        VkInstance instance = 0;
+
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         GLFWwindow *window = glfwCreateWindow(640, 480, "Test", NULL, NULL);
+
+        VkSurfaceKHR surface;
+        VkResult err = glfwCreateWindowSurface(instance, window, NULL, &surface);
+        if(err){
+                fprintf(stderr, "Vulkan Surface Failed.");
+        }
 
         glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
@@ -285,5 +323,6 @@ int main(int argc, char *argv[]){
         /* storm3d->test(window); */
         
         /* SDL_Quit(); */
+        glfwTerminate();
         return 0;
 }
