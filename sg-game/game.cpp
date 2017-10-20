@@ -29,6 +29,8 @@ int main(int argc, char *argv[]){
         }
         
         VkInstance instance = 0;
+        PFN_vkCreateInstance pfnCreateInstance = (PFN_vkCreateInstance)
+                glfwGetInstanceProcAddress(NULL, "vkCreateInstance");
 
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         GLFWwindow *window = glfwCreateWindow(640, 480, "Test", NULL, NULL);

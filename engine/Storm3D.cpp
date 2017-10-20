@@ -116,6 +116,10 @@
 #include "render.h"
 
 void Storm3D::test(VkInstance instance, GLFWwindow *window){
+        uint32_t count = 0;
+        VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
+        vkEnumeratePhysicalDevices(instance, &count, nullptr);
+
         Render *render;
         render->initializeWindow(instance, window);
 }
