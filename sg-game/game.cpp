@@ -55,6 +55,96 @@
  */
 /**
  * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
+ * Date              : 20.10.2017
+ * Last Modified Date: 20.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
  * Date              : 19.10.2017
  * Last Modified Date: 19.10.2017
  */
@@ -173,8 +263,18 @@ int main(int argc, char *argv[]){
                 return -1;
         }
         
+        glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         GLFWwindow *window = glfwCreateWindow(640, 480, "Test", NULL, NULL);
-        glfwMakeContextCurrent(window);
+
+        glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
+
+        do{
+                glfwSwapBuffers(window);
+                glfwPollEvents();
+        }
+        while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS &&
+                        glfwWindowShouldClose(window) == 0);
+        /* glfwMakeContextCurrent(window); */
 
         /* SDL_Window *window; */
         /* if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) != 0){ */
