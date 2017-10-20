@@ -10,6 +10,11 @@
  */
 /**
  * File              : ../engine/include/storm3d.h
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/include/storm3d.h
  * Date              : 18.10.2017
  * Last Modified Date: 18.10.2017
  */
@@ -92,5 +97,5 @@ using namespace std;
 class Storm3D {
         public:
                 Storm3D(){}
-                void test();
+                void test(SDL_Window *window);
 };

@@ -25,6 +25,21 @@
  */
 /**
  * File              : ../engine/Storm3D.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/Storm3D.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/Storm3D.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/Storm3D.cpp
  * Date              : 18.10.2017
  * Last Modified Date: 18.10.2017
  */
@@ -94,7 +109,7 @@
 #include "storm3d.h"
 #include "render.h"
 
-void Storm3D::test() {
+void Storm3D::test(SDL_Window *window){
         Render *render;
-        render->initializeWindow();
+        render->initializeWindow(window, "Test", 0, 0, 1920, 1080, 0);
 }

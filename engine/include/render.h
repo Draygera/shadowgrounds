@@ -23,6 +23,16 @@
  * Date              : 19.10.2017
  * Last Modified Date: 19.10.2017
  */
+/**
+ * File              : ../engine/include/render.h
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/include/render.h
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
 /*
  * =====================================================================================
  *
@@ -47,5 +57,5 @@
 class Render {
         public:
                 Render(){}
-                void initializeWindow();
+                void initializeWindow(SDL_Window *window, const char* title, int x, int y, int w, int h, Uint32 flags);
 };
