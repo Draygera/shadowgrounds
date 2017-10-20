@@ -10,6 +10,11 @@
  */
 /**
  * File              : ../sg-game/game.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../sg-game/game.cpp
  * Date              : 18.10.2017
  * Last Modified Date: 18.10.2017
  */
@@ -89,6 +94,9 @@ int main(int argc, char *argv[]){
                 SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
                 return 1;
         }
+
+        Storm3D *storm3d;
+        storm3d->test();
 
         SDL_Quit();
         return 0;

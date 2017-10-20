@@ -8,6 +8,36 @@
  * Date              : 19.10.2017
  * Last Modified Date: 19.10.2017
  */
+/**
+ * File              : ../engine/render/Render.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/render/Render.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/render/Render.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/render/Render.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/render/Render.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
+/**
+ * File              : ../engine/render/Render.cpp
+ * Date              : 19.10.2017
+ * Last Modified Date: 19.10.2017
+ */
 /*
  * =====================================================================================
  *
@@ -26,3 +56,8 @@
  * =====================================================================================
  */
 
+#include "render.h"
+
+void Render::initializeWindow() {
+        std::cout << "Window initialized" << std::endl;
+}
