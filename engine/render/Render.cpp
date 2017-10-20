@@ -6,9 +6,9 @@
  */
 #include "render.h"
 
-void Render::initializeWindow(VkInstance *instance, GLFWwindow *window) {
+void Render::initializeWindow(VkInstance instance, GLFWwindow *window) {
         VkSurfaceKHR surface;
-        VkResult err = glfwCreateWindowSurface(*instance, *window, NULL, &surface);
+        VkResult err = glfwCreateWindowSurface(instance, window, NULL, &surface);
         if(err){
                 fprintf(stderr, "Vulkan Surface Failed.");
         }

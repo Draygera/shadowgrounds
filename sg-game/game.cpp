@@ -1,7 +1,13 @@
 /**
- * File              : ../sg-game/game.cpp
- * Date              : 20.10.2017
- * Last Modified Date: 20.10.2017
+ * File            : ../sg-game/game.cpp
+ * Author          : Brandon Dulaney <draygera@gmail.com>
+ * Date            : 20.10.2017
+ * Last Modified By: Brandon Dulaney <draygera@gmail.com>
+ */
+/**
+ * File            : ../sg-game/game.cpp
+ * Date            : 20.10.2017
+ * Last Modified Date            : 20.10.2017
  */
 
 
@@ -27,6 +33,7 @@ int main(int argc, char *argv[]){
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         GLFWwindow *window = glfwCreateWindow(640, 480, "Test", NULL, NULL);
 
+        storm3d->test(instance, window);
         /* glfwMakeContextCurrent(window); */
 
         /* SDL_Window *window; */

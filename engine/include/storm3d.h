@@ -8,13 +8,13 @@
 #pragma once
 
 // Includes
-#include <set>
-#include <SDL2/SDL.h>
+#include <vulkan/vulkan.h>
+#include <GLFW/glfw3.h>
 
 using namespace std;
 
 class Storm3D {
         public:
                 Storm3D(){}
-                void test(SDL_Window *window);
+                void test(VkInstance instance, GLFWwindow *window);
 };

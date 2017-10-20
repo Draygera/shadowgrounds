@@ -5,11 +5,13 @@
  * Last Modified By: Brandon Dulaney <draygera@gmail.com>
  */
 
-#include <SDL2/SDL.h>
-#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <vulkan/vulkan.h>
+#include <GLFW/glfw3.h>
 
 class Render {
         public:
                 Render(){}
-                void initializeWindow(SDL_Window *window, const char* title, int x, int y, int w, int h, Uint32 flags);
+                void initializeWindow(VkInstance instance, GLFWwindow *window);
 };
