@@ -4,12 +4,6 @@
  * Date            : 20.10.2017
  * Last Modified By: Brandon Dulaney <draygera@gmail.com>
  */
-/**
- * File            : ../sg-game/game.cpp
- * Date            : 20.10.2017
- * Last Modified Date            : 20.10.2017
- */
-
 
 #include "storm3d.h"
 #include <vulkan/vulkan.h>
@@ -18,24 +12,25 @@
 
 using namespace std;
 
+Storm3D *storm3d;
+
 int main(int argc, char *argv[]){
-        Storm3D *storm3d;
-
-        if (!glfwInit()){
-                fprintf( stderr, "Failed to open GLFW Window. If you use an Intel GPU, use version 2.1 of GLFW instead.\n" );
-                glfwTerminate();
-                return -1;
-        }
+        storm3d->run();
+/*         if (!glfwInit()){ */
+/*                 fprintf( stderr, "Failed to open GLFW Window. If you use an Intel GPU, use version 2.1 of GLFW instead.\n" ); */
+/*                 glfwTerminate(); */
+/*                 return -1; */
+/*         } */
         
-        VkInstance instance = 0;
-        PFN_vkCreateInstance pfnCreateInstance = (PFN_vkCreateInstance)
-                glfwGetInstanceProcAddress(NULL, "vkCreateInstance");
+/*         VkInstance instance = 0; */
+/*         PFN_vkCreateInstance pfnCreateInstance = (PFN_vkCreateInstance) */
+/*                 glfwGetInstanceProcAddress(NULL, "vkCreateInstance"); */
 
-        glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-        GLFWwindow *window = glfwCreateWindow(640, 480, "Test", NULL, NULL);
+/*         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API); */
+/*         GLFWwindow *window = glfwCreateWindow(640, 480, "Test", NULL, NULL); */
 
-        storm3d->test(instance, window);
+/*         storm3d->test(instance, window); */
 
-        glfwTerminate();
+/*         glfwTerminate(); */
         return 0;
 }

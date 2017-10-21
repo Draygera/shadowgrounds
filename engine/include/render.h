@@ -13,5 +13,4 @@
 class Render {
         public:
                 Render(){}
-                void initializeWindow(VkInstance instance, GLFWwindow *window);
 };
