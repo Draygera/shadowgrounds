@@ -12,10 +12,28 @@
 
 using namespace std;
 
-Storm3D *storm3d;
+void initVulkan(){
+
+}
+
+void mainLoop(){
+
+}
+
+void cleanup(){
+
+}
+
+void run(){
+        initVulkan();
+        mainLoop();
+        cleanup();
+}
 
 int main(int argc, char *argv[]){
-        storm3d->run();
+        run();
+        /* Storm3D *storm3d; */
+        /* storm3d->run(); */
 /*         if (!glfwInit()){ */
 /*                 fprintf( stderr, "Failed to open GLFW Window. If you use an Intel GPU, use version 2.1 of GLFW instead.\n" ); */
 /*                 glfwTerminate(); */
